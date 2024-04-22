@@ -255,7 +255,8 @@ button:focus {
 /* =============== OUR PORTFOLIO ============*/
 .portfolio-list {
     display: flex;
-    row-gap: 24px; 
+    row-gap: 48px; 
+    column-gap: 24px; 
     justify-content: space-between;
     flex-wrap: wrap;
 }
