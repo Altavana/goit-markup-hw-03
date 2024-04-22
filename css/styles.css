@@ -42,6 +42,7 @@ button {
 /* ===================HEADER================*/
 .page-header {
     color:#ffffff;
+    border-bottom: 1px solid #e7e9fc;
 }
 .header-links {
     display: flex;
@@ -67,6 +68,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
  }
 .page-logo:focus {
     color:#404bbf;
@@ -151,26 +153,40 @@ button:hover,
 button:focus {
     background: #404bbf;
 }
-/* =============== FEACHERS ============*/
-
-.feachers-list {
+/* =============== FEATURES ============*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.features-list {
     display: flex;
-    column-gap: 24px; 
+    gap: 24px; 
     flex-wrap: wrap;
     /* justify-content: space-between;*/
 } 
-.feachers-item {
+.features-item {
     width: calc((100% - 72px) / 4);
-
+   }
+.features-item:last-child {
+    margin-right: 0px;
 }
-.feachers-name {
+.features-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-.feachers-text {
+.features-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -183,12 +199,13 @@ button:focus {
 }
 .team-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .team-card-info {
-    padding: 32px 16px;
+    padding: 32px 0px;
 
 }
 .team-items {
@@ -197,6 +214,9 @@ button:focus {
     /* height: 380px; */
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
+}
+.team-item:last-child{
+    margin-right: 0px;
 }
 .photo-workers {
   height: 260px;
@@ -235,7 +255,7 @@ button:focus {
 /* =============== OUR PORTFOLIO ============*/
 .portfolio-list {
     display: flex;
-    column-gap: 24px; 
+    row-gap: 24px; 
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -287,6 +307,10 @@ button:focus {
     padding-bottom: 100px;
      /* max-width: 1440px;  */
 }
+.footer-logo {
+    display: inline-block; 
+    margin-bottom: 16px;
+}
 
 .footer-text {
     max-width: 264px;
@@ -295,8 +319,7 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 19px;
-}
+   }
 .page-footer .color-logo {
     color: #f4f4fd;
 }
