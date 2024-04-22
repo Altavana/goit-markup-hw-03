@@ -1,5 +1,8 @@
 ul,ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left:0;
 }
 a {
     text-decoration: none;
@@ -9,15 +12,45 @@ body {
     color: #434455;
     background-color: #ffffff;
 }
+h1, h2, h3, h4, h5, h6, p {
+ margin-top: 0;
+ margin-bottom: 0;
+}
+img {
+    display: block;
+}
 
 button {
     cursor: pointer;
     font-family: inherit;
     background: #4d5ae5;
 }
+.container { 
+    max-width: 1158px;
+    padding-left: 15px;                     
+    padding-right: 15px;
+    margin-left: auto; 
+    margin-right: auto;
+}
 /* ===================HEADER================*/
 .page-header {
     color:#ffffff;
+}
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.page-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+.menu {
+    display: flex;
+    gap: 40px;  
 }
 .page-logo {
     font-family: "Raleway", sans-serif;
@@ -27,7 +60,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-}
+ }
 .page-logo:focus {
     color:#404bbf;
 }
@@ -35,6 +68,7 @@ button {
     color: #2e2f42;
 }
 .menu-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -48,7 +82,12 @@ button {
 address {
     font-style: normal;
 }
+.adr-menu {
+    display: flex;
+    gap: 40px;
+}
 .adr-link {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -62,8 +101,15 @@ address {
 }
 /* =========== HERO ============ */
 .hero {
-    background-color: #2e2f42;   
+    background-color: #2e2f42;
+    max-width: 1440px; 
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-left: auto; 
+    margin-right: auto;
+
 }
+
 .hero-tagline {
     font-weight: 700;
     font-size: 56px;
@@ -71,14 +117,29 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
+    max-width: 496px;
+    max-height: 120px;
+    margin-bottom: 48px;
+    margin-left: auto; 
+    margin-right: auto;
 }
 .button-order {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff; 
-}
+    border:none;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    margin-left: auto; 
+    margin-right: auto;
+  }
 button:hover,
 button:focus {
     background: #404bbf;
@@ -159,13 +220,18 @@ button:focus {
 /* =============== FOOTER ============*/
 .page-footer {
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+
 .footer-text {
+    max-width: 264px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    margin-top: 19px;
 }
 .page-footer .color-logo {
     color: #f4f4fd;
